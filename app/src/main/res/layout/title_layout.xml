@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp">
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/profilePic"
+        app:layout_constraintBottom_toBottomOf="@id/profilePic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/arrowBack"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/back_arrow"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/arrowBack"
+        app:layout_constraintTop_toTopOf="@id/profilePic"
+        app:layout_constraintBottom_toBottomOf="@id/profilePic"
+        app:layout_constraintEnd_toStartOf="@id/profilePic"
+        android:text="@string/search_food"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textFontWeight="400" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:src="@drawable/header_img"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

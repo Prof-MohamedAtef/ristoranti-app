@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ristoranti</string>
+    <string name="onBoardingTitle1">Browse your menu\n and order directly</string>
+    <string name="onBoardingTitle2">Even to space with\n us! Together</string>
+    <string name="onBoardingTitle3">Pickup delivery at\n your door</string>
+    <string name="onBoardingText1">Our app can send you everywhere, even\n space. For only $2.99 per month</string>
+    <string name="onBoardingText2">Our app can send you everywhere, even\n space. For only $2.99 per month</string>
+    <string name="onBoardingText3">Our app can send you everywhere, even\n space. For only $2.99 per month</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Login</string>
+
+    <string name="facebook">FACEBOOK</string>
+    <string name="google">GOOGLE</string>
+
+    <string name="email">E-mail</string>
+    <string name="email_hint">Your email or phone</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="do_not_have_account">Don\'t have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="login_btn">LOGIN</string>
+
+    <string name="check_errors">Check errors please!</string>
+    <string name="error_wrong_login_password">Login Password is wrong!</string>
+    <string name="label_no_internet">No Internet Connection!</string>
+    <string name="wrong_credentials_try_again">Wrong credentials, please try again</string>
+
+    <string name="error_generic_msg">Something went wrong, please try again later.</string>
+    <string name="please_check_your_internet_connection_and_try_again">Please check your internet connection and try again.</string>
+    <string name="ok_">ok</string>
+    <string name="empty">empty!</string>
+    <string name="my_orders">My Orders</string>
+    <string name="myprofile">My Profile</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help_faqs"><![CDATA[Helps & FAQs]]></string>
+    <string name="settings">Settings</string>
+    <string name="user_name">User Name</string>
+    <string name="search_food">Search Food</string>
+    <string name="italian">Italian</string>
+    <string name="food_item">Food Item</string>
+    <string name="restaurant">Restaurant</string>
+
+</resources>
