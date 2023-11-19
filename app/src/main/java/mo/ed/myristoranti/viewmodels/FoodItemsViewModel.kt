@@ -32,12 +32,12 @@ class FoodItemsViewModel @Inject constructor(
     val loginResponse = _loginResponse.asStateFlow()
 
 
-    fun userLogin(username: String, password: String) {
+    fun userLogin(phone: String, password: String, deviceName: String) {
         _loginResponse.update { it.copy(viewState = ViewState.LOADING) }
         viewModelScope.launch(ioDispatcher) {
-            Timber.e("--> Username: $username")
+            Timber.e("--> Username: $phone")
             Timber.e("--> Password: $password")
-            accountsInteractor.login(username, password).let { response ->
+            accountsInteractor.login(phone, password, deviceName).let { response ->
                 when (response) {
                     is Result.Success -> {
                         val login = response.data as? LoginResponseData

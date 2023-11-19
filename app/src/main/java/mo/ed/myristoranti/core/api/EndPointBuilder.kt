@@ -9,6 +9,7 @@ import javax.inject.Inject
 class EndPointBuilder  @Inject constructor(
     private var networkConfiguration: NetworkConfiguration,
     private val accountRepository: AccountRepository,
+    private var requestBody: Any
 ) {
 
     enum class OfflinePolicy {
@@ -45,8 +46,13 @@ class EndPointBuilder  @Inject constructor(
         return this
     }
 
+    fun setRequestBody(requestBody: Any): EndPointBuilder {
+        this.requestBody = requestBody
+        return this
+    }
+
     fun build(networkEvent: NetworkConstants.NetworkEvents): EndPointObject {
-        return EndPointObject(endPoint, networkEvent)
+        return EndPointObject(endPoint, requestBody, networkEvent)
     }
 
 }

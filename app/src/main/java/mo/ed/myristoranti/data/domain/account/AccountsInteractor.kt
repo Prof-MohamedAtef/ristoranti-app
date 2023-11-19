@@ -6,8 +6,8 @@ import mo.ed.myristoranti.data.domain.Interactor.BaseInteractor
 import javax.inject.Inject
 
 class AccountsInteractor @Inject constructor(private val repositoryManager: IRepository) : BaseInteractor() {
-    suspend fun login(username: String, password: String): Result<*> {
-        TODO("Not yet implemented")
+    suspend fun login(phone: String, password: String, deviceName: String): Result<*> {
+        return repositoryManager.getEndPointRepository().login(phone, password, deviceName)
     }
 
     suspend fun getFoodItems(): Result<*> {

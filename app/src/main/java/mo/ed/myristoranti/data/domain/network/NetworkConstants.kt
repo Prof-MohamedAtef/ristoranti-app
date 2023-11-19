@@ -82,7 +82,7 @@ class NetworkConstants {
         enum class EndPoints(val url: String) {
 
             // Products (Postpaid - Prepaid - Flex - Landline)
-//            LOGIN("{${Params.VERSION.value}}/{${Params.LANG.value}}/public/content/products/{${Params.SERVICE_TYPES.value}}"),
+            LOGIN("/foodItem/public/api/users/login"),
             //            ROAMING_PRODUCTS_TYPES("{${Params.VERSION.value}}/{${Params.LANG.value}}/public/content/products/{${Params.SERVICE_TYPES.value}}"),
             GETFOODITEMS("/foodItem/public/api/foodItem/28"),
         }
