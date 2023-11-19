@@ -67,6 +67,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -111,4 +112,12 @@ dependencies {
     kapt("androidx.hilt:hilt-compiler:1.0.0")
     //Dagger
     implementation("com.google.dagger:hilt-android:2.46.1")
+
+    //viewmodel and livedata
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+
+    //Glide
+    implementation ("com.github.bumptech.glide:glide:4.11.0")
+    implementation ("com.github.bumptech.glide:compiler:4.11.0")
 }

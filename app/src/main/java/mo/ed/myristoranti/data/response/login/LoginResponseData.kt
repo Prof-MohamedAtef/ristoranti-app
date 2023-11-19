@@ -1,6 +1,6 @@
 package mo.ed.ristoranti.data.response.login
 
-data class Data(
+data class LoginResponseData(
     val token: String,
     val user: User
 )

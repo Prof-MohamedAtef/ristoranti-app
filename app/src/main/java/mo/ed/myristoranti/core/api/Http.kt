@@ -1,4 +1,4 @@
-package mo.ed.myristoranti.network.api
+package mo.ed.myristoranti.core.api
 
 import android.util.Log
 import com.airbnb.lottie.utils.Utils

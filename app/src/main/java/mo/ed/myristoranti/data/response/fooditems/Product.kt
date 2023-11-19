@@ -1,5 +1,7 @@
 package mo.ed.myristoranti.data.response.fooditems
 
+import java.io.Serializable
+
 data class Product(
     val calories: Int,
     val currency: String,
@@ -13,4 +15,4 @@ data class Product(
     val offer: Offer,
     val price: Double,
     val rating: Rating
-)
+): Serializable
